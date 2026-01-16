@@ -6,8 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        # HARUS SAMA DENGAN NAMA FOLDER DI VS CODE
-        working-directory: saucedemo-web-automation 
+        working-directory: saucedemo-web-automation
 
     steps:
       - name: Checkout Code
@@ -24,5 +23,13 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      - name: Run Web Test
-        run: npm run test:web
+      - name: Run Test
+        # Gunakan npx cucumber-js saja dulu biar aman di server
+        run: npx cucumber-js
+
+      - name: Upload Report Artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cucumber-report
+          path: saucedemo-web-automation/reports/

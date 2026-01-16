@@ -32,7 +32,7 @@ Before(async function (scenario) {
         console.log("💻 Menjalankan Automation Web Desktop...");
         if (!browser) {
             browser = await chromium.launch({ 
-                headless: false,
+                headless: true, //diganti false jika ingin melihat browser terbuka
                 channel: 'chrome', 
                 slowMo: 500, 
                 args: ['--start-maximized'] 
