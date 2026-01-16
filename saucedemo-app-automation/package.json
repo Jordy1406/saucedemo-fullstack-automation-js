@@ -1,0 +1,16 @@
+{
+  "name": "saucedemo-app-automation",
+  "version": "1.0.0",
+  "description": "Automation for SauceDemo App",
+  "main": "index.js",
+  "scripts": {
+    "test:app": "npx cucumber-js && node report.js"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "webdriverio": "^9.0.0"
+  },
+  "devDependencies": {
+    "cucumber-html-reporter": "^7.2.0"
+  }
+}

@@ -1,0 +1,101 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "checkout-saucedemo;user-melakukan-pembelian-barang-sampai-selesai",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "User melakukan pembelian barang sampai selesai",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 471552999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Saya login ke SauceDemo dengan user \"standard_user\"",
+            "match": {
+              "location": "step_definitions\\steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2814041500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Saya menambah barang ke keranjang",
+            "match": {
+              "location": "step_definitions\\steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1089984999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Saya checkout dengan data \"Andi\", \"Wijaya\", \"12345\"",
+            "match": {
+              "location": "step_definitions\\steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3191365700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Muncul pesan sukses \"Thank you for your order!\"",
+            "match": {
+              "location": "step_definitions\\steps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4822599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 37326800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@web",
+            "line": 3
+          },
+          {
+            "name": "@mobile",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "checkout-saucedemo",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Checkout SauceDemo",
+    "tags": [],
+    "uri": "features\\checkout.feature"
+  }
+]
