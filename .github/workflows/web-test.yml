@@ -13,7 +13,7 @@ jobs:
     # Memberi tahu GitHub untuk bekerja di dalam folder project WEB
     defaults:
       run:
-        working-directory: saucedemo-pro-automation
+        working-directory: saucedemo-web-automation
 
     steps:
       - name: Checkout Code
