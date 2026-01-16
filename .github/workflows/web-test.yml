@@ -1,19 +1,13 @@
 name: SauceDemo Web CI
-
-on:
-  push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
+on: [push, pull_request]
 
 jobs:
   web-automation:
     runs-on: ubuntu-latest
-    
-    # Memberi tahu GitHub untuk bekerja di dalam folder project WEB
     defaults:
       run:
-        working-directory: saucedemo-web-automation
+        # HARUS SAMA DENGAN NAMA FOLDER DI VS CODE
+        working-directory: saucedemo-web-automation 
 
     steps:
       - name: Checkout Code
@@ -30,14 +24,5 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      - name: Run Playwright Web Test
+      - name: Run Web Test
         run: npm run test:web
-
-      - name: Upload Playwright Report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: web-test-report
-          # Path menuju folder report di dalam folder web
-          path: saucedemo-pro-automation/reports/
-          retention-days: 30
