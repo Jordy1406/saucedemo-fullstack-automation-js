@@ -1,0 +1,105 @@
+[
+  {
+    "description": "Feature: Checkout Mobile",
+    "elements": [
+      {
+        "description": "",
+        "id": "checkout-aplikasi-saucedemo;melakukan-pembelian-sampai-selesai",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Melakukan pembelian sampai selesai",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11496298399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Saya membuka aplikasi SauceDemo di mobile",
+            "match": {
+              "location": "step_definitions\\steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 668900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Saya login dengan user \"standard_user\"",
+            "match": {
+              "location": "step_definitions\\steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4760383299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Saya menambah barang ke keranjang dan lanjut checkout",
+            "match": {
+              "location": "step_definitions\\steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8747493600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Saya menyelesaikan pesanan",
+            "match": {
+              "location": "step_definitions\\steps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3798470199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Saya melihat pesan sukses pembelian",
+            "match": {
+              "location": "step_definitions\\steps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1653078300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 482657600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "checkout-aplikasi-saucedemo",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Checkout Aplikasi SauceDemo",
+    "tags": [],
+    "uri": "features\\login.feature"
+  }
+]
